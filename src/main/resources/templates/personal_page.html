@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal page</title>
+
+    <link rel="stylesheet" href="css/filter_table_style.css">
+</head>
+<body>
+
+<!-- Piece of code working with object parameters -->
+<!--<form action="/personalPage" method="get" th:object="${user}">-->
+<!--    <div class="wrapper">-->
+<!--        <h2>Login: <span name="login" th:text="${user.login}"></span></h2>-->
+<!--        <h2>Password <span name="password" th:text="${user.password}"></span></h2>-->
+<!--        <a th:href="@{/productsPage(userId=${userId})}">Products Filter Page</a>-->
+<!--    </div>-->
+<!--</form>-->
+
+<!-- Piece of code working with raw text -->
+<form action="/personalPage" method="get">
+    <div class="wrapper">
+        <h2>Login: <span name="login" th:text="${userLogin}"></span></h2>
+        <!-- Decided to show only login to show password using SLQ injection -->
+        <!--        <h2>Password <span name="password" th:text="${userPassword}"></span></h2>-->
+        <a th:href="@{/productsPage(userId=${userId})}">Products Filter Page</a>
+    </div>
+</form>
+
+</body>
+</html>

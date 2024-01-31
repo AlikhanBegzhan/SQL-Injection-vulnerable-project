@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error page</title>
+</head>
+<body>
+
+<h1>You entered incorrect data! Please retry your action again.</h1>
+<h2 th:class="error" th:text="${errorMessage}"></h2>
+
+</body>
+</html>
