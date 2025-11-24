@@ -98,6 +98,12 @@ Stored payloads entered during registration are later executed when reused in SQ
 
 ---
 
+## Additional Algorithms
+
+This project also includes an implementation and testing of the **Knuth–Morris–Pratt (KMP)** pattern matching algorithm. KMP was used to analyse input patterns and log matched sequences during SQL injection testing, and the project contains related files such as pattern logs that demonstrate its execution.
+
+---
+
 ## Educational Notes
 
 This project provides a hands‑on environment to:
