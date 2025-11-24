@@ -38,11 +38,11 @@ The project aims to:
 
 ## Technology Stack
 
-**Backend:** Java Spring Boot (MVC)
-**Database:** PostgreSQL
-**Build Tool:** Maven
-**Views:** HTML/CSS server‑rendered templates
-**Environment:** Local, isolated testing setup
+* **Backend:** Java Spring Boot (MVC)
+* **Database:** PostgreSQL
+* **Build Tool:** Maven
+* **Views:** HTML/CSS server‑rendered templates
+* **Environment:** Local, isolated testing setup
 
 ---
 
