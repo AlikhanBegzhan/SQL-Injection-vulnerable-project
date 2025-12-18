@@ -34,4 +34,4 @@ build/
 
 ### Project Files ###
 application.yml
-application-*.properties
+application-local.properties
