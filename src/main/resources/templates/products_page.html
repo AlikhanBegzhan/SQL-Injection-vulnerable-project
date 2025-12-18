@@ -19,7 +19,8 @@
                    placeholder="Filter product by name">
         </div>
 
-        <p th:if="${sqli != null}" th:class="error" th:text="${sqli}" style="color:red"></p>
+        <!-- Text shown when SQL injection in the search field -->
+        <!--        <p th:if="${sqli != null}" th:class="error" th:text="${sqli}" style="color:red"></p>-->
 
         <h3>Products Table</h3>
         <div class="my_table">

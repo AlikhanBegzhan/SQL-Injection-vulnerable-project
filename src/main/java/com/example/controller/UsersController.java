@@ -69,4 +69,16 @@ public class UsersController {
         }
     }
 
+    @GetMapping("/userInfo")
+    public String getAllUsers(@RequestParam(name = "userId") String userId, Model model) {
+        try {
+            model.addAttribute("user", usersService.getUserInfo(userId));
+            return "user_info_page";
+        } catch (SQLException e) {
+            model.addAttribute("errorMessage", "Error code: " +
+                    e.getErrorCode() + "; Error message: " + e.getMessage());
+            return "error_page_sql";
+        }
+    }
+
 }

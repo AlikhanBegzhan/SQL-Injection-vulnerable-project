@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+
+    <link rel="stylesheet" href="css/filter_table_style.css">
+</head>
+<body>
+
+<form action="/userInfo" method="get" th:object="${user}">
+    <div class="wrapper">
+
+        <h3>User Information</h3>
+        <h4>Login: <span th:text="${user.login}"> Login </span></h4>
+        <h4>Password: <span th:text="${user.password}"> Password </span></h4>
+
+    </div>
+</form>
+
+</body>
+</html>

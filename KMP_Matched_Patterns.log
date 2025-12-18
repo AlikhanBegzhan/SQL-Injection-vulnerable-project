@@ -1,3 +1,29 @@
-2024-01-30T00:07:35.336+01:00  INFO 22380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-30T00:07:35.348+01:00  INFO 22380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-30T00:07:35.351+01:00  INFO 22380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-18T13:58:29.269+02:00  INFO 17220 --- [main] com.example.SeminarProjectApplication    : Starting SeminarProjectApplication using Java 17 with PID 17220 (C:\Users\alikb\Desktop\University\Winter Semester 2023-2024\Seminar\Seminar Project - Unsafe\target\classes started by alikb in C:\Users\alikb\Desktop\University\Winter Semester 2023-2024\Seminar\Seminar Project - Unsafe)
+2025-12-18T13:58:29.280+02:00  INFO 17220 --- [main] com.example.SeminarProjectApplication    : The following 1 profile is active: "local"
+2025-12-18T13:58:30.205+02:00  INFO 17220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18T13:58:30.289+02:00  INFO 17220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2025-12-18T13:58:31.025+02:00  INFO 17220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-12-18T13:58:31.037+02:00  INFO 17220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-18T13:58:31.037+02:00  INFO 17220 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-12-18T13:58:31.156+02:00  INFO 17220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-18T13:58:31.157+02:00  INFO 17220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
+2025-12-18T13:58:31.364+02:00  INFO 17220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18T13:58:31.456+02:00  INFO 17220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-12-18T13:58:31.460+02:00  INFO 17220 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-12-18T13:58:31.797+02:00  INFO 17220 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18T13:58:31.829+02:00  INFO 17220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-18T13:58:32.101+02:00  INFO 17220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a3f08b6
+2025-12-18T13:58:32.101+02:00  INFO 17220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-18T13:58:32.185+02:00  WARN 17220 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-18T13:58:33.081+02:00  INFO 17220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18T13:58:33.236+02:00  INFO 17220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T13:58:33.671+02:00  WARN 17220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-18T13:58:33.836+02:00  INFO 17220 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-12-18T13:58:34.072+02:00  INFO 17220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-12-18T13:58:34.080+02:00  INFO 17220 --- [main] com.example.SeminarProjectApplication    : Started SeminarProjectApplication in 5.457 seconds (process running for 6.11)
+2025-12-18T13:59:18.688+02:00  INFO 17220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-18T13:59:18.689+02:00  INFO 17220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-18T13:59:18.690+02:00  INFO 17220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-18T13:59:54.313+02:00  INFO 17220 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18T13:59:54.315+02:00  INFO 17220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-18T13:59:54.315+02:00  INFO 17220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

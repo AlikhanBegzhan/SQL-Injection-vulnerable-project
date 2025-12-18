@@ -87,4 +87,18 @@ public class UsersService {
         return userData;
     }
 
+    public UsersModel getUserInfo(String userId) throws SQLException {
+        Connection con = DriverManager.getConnection(
+                "jdbc:postgresql://localhost:5432/test", "postgres", "243090");
+        Statement stmt = con.createStatement();
+        UsersModel badUser = findUserById(userId);
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users WHERE login='" + badUser.getLogin() + "'");
+        con.close();
+        UsersModel user = new UsersModel();
+        user.setLogin(rs.getString("login"));
+        user.setPassword(rs.getString("password"));
+
+        return user;
+    }
+
 }
